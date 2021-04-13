@@ -3,10 +3,20 @@
   <script type="text/javascript"
       src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js">
   </script>
-  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
   <cast-media-player></cast-media-player>
+  
+   <style>
+     body {  
+      --background-color: rgb(221, 65, 35);
+      --watermark-image: url("../images/watermark.png");
+      --splash-image:url("../images/splash_screener.png");
+      --logo-image:url("../images/logo.png");
+      --progress-color: #fff;
+     }
+   </style>
+  
   <script>
     const context = cast.framework.CastReceiverContext.getInstance();
     const playerManager = context.getPlayerManager();
